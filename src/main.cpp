@@ -225,7 +225,7 @@ void Tarefa_de_controle( void * pvParameters )
   //Obtém o ângulo (de equilíbrio) do robô em graus e converte pra Radianos
   theta = mpu6050.getAngleX() * DEGTORAD; 
   //Obtém a velocidade angular (de equilíbrio) do robô e converte pra Radianos
-  thetadot  = mpu6050.getGyroX(); 
+  thetadot  = mpu6050.getGyroX()* DEGTORAD; 
   //Obtém o ângulo (de rotação) do robô em graus e converte pra Radianos
   delta = (mpu6050.getAngleZ()) * DEGTORAD;
   //Obtém a velocidade angular (de rotação) do robô e converte pra Radianos
