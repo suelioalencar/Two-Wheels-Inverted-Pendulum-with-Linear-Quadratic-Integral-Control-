@@ -11,13 +11,13 @@ But, of course, i replace the Uno Board to a Wemos D1 R32 (Esp32).
 I did a controller (joystick) using HTML, so you just need start the robot, see the IP and put it on a Web Browser. I did too the same in python. 
 <figure>
   <figcaption>Joystick html</figcaption>
-<img src="https://github.com/suelioalencar/Two-Wheels-Inverted-Pendulum-with-Linear-Quadratic-Integral-Control-/blob/main/controladorhtml.PNG" width="400" height="600"title="Joystick HTML" />
+<img src="https://github.com/suelioalencar/Two-Wheels-Inverted-Pendulum-with-Linear-Quadratic-Integral-Control-/blob/main/controladorhtml.PNG" width="400" height="550"title="Joystick HTML" />
   </figure>
  
  
  <figure>
   <figcaption>Joystick Python</figcaption>
-<img src="https://github.com/suelioalencar/Two-Wheels-Inverted-Pendulum-with-Linear-Quadratic-Integral-Control-/blob/main/Python%20Joystick/Joystick%20Pyton.png" title="Joystick PythonL" />
+<img src="https://github.com/suelioalencar/Two-Wheels-Inverted-Pendulum-with-Linear-Quadratic-Integral-Control-/blob/main/Python%20Joystick/Joystick%20Pyton.png" title="Joystick Python" />
   </figure>
 
 Has you can see in the above images, we can control the robot with the joytick and sending desired positions to the robot. Furthemore, desired position have some limitations (40cm to linear position and 120 degrees to z rotation), and we just can use it when the robot is in initial position, because if, for example, do you do a full rotation using joystick (360 degrees) and after it you write 30 degrees do the desired position rotation, what the controller will see is 360-30 = 330 degrees,and that drives the robot out of balance due to physical limitations. In general purposes, the desired positions option may be just used to see contol demos. In all other cases, is most recommendable use the joystick one. 
