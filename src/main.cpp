@@ -229,7 +229,7 @@ void Tarefa_de_controle( void * pvParameters )
   //Obtém o ângulo (de rotação) do robô em graus e converte pra Radianos
   delta = (mpu6050.getAngleZ()) * DEGTORAD;
   //Obtém a velocidade angular (de rotação) do robô e converte pra Radianos
-  deltadot = (mpu6050.getGyroX()) * DEGTORAD;
+  deltadot = (mpu6050.getGyroZ()) * DEGTORAD;
   
   //Calcula a média da contagem dos pulsos de ambas as rodas
   avgcounter = (counter_l + counter_r) / 2;
