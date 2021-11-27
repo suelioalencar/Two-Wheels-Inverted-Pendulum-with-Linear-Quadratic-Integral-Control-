@@ -8,4 +8,4 @@ https://pt.aliexpress.com/item/4001193841954.html?spm=a2g0o.productlist.0.0.6290
 
 But, of course, i replace the Uno Board to a Wemos D1 R32 (Esp32). 
 
-I did a controller using HTML, so you just need start the robot, see the IP and put it on a Web Browser. I did too the same in python. 
+I did a controller (joystick) using HTML, so you just need start the robot, see the IP and put it on a Web Browser. I did too the same in python. 
